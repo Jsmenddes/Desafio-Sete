@@ -1,0 +1,9 @@
+<hr aria-hidden="true">
+<p>O número {{ numeroComponent }} é {{ isPar(numeroComponent) }} e {{primo(numeroComponent)}} </p>
+      <p *ngFor="let num of numeros " >
+        O número {{ num }} é {{ isPar(numeroComponent) }} e {{primo(num)}} 
+      </p>
+<button [routerLink]="['/quadrado']" [state]="{ valorRota: numeroComponent}">Quanto é {{numeroComponent }} ao quadrado?</button>
+<button (click)="CalculoCubo()">Quanto é {{numeroComponent }} ao cubo?</button>
+
+    
